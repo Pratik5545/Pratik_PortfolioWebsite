@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar-container">
+        <nav class="navbar">
+            <div class="logo">Pratik</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting">Hi, I'm</p>
+                    <h1>Pratik Tripathi</h1>
+                    <p class="tagline">Web Developer And  Java developer</p>
+                    <p class="bio">
+                        <b>I am a Computer Science & Engineering student specializing in Artificial Intelligence and Machine Learning. My technical expertise includes web development and building robust backend applications using Java and the Spring Boot framework. I am actively expanding my programming skills and have interest in the ecosystems of Go (Golang) and Python.</b>
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn primary-btn">Contact Me</a>
+                        <a href="My_Resume.pdf" class="btn secondary-btn" download>Download CV</a>
+                    </div>
+                    <div class="social-icons">
+                        
+                        <a href="https://github.com/Pratik5545" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:pratiktripathi4495@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://x.com/I__am__paradox" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/I.jpg" alt="Aapki Photo">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section-card">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript, React,Java</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Management</h3>
+                    <p>PostgreSQL, MongoDB</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Figma, Adobe XD, Prototyping</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-java"></i>
+                    <h3>Programming Languages</h3>
+                    <p>Java, Python, JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Project Management</h3>
+                    <p>Agile, Scrum</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-tools"></i>
+                    <h3>Tools & Technologies</h3>
+                    <p>Git, GitHub, Docker, AWS Basics</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-card">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Advanced Typing Speed Test</h3>
+                    <p>An interactive typing speed test built with vanilla JavaScript. Fetches live quotes from an external API and tracks real-time WPM and accuracy.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/pratik5545/typing-speed-test" target="_blank" class="btn-project">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://pratik5545.github.io/typing-speed-test/" target="_blank" class="btn-project">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Smart Canteen System</h3>
+                    <p>A full-stack canteen ordering system using a Java Spring Boot backend and a vanilla JS frontend. Features user authentication and order management.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Pratik5545/smart-canteen-system" target="_blank" class="btn-project">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Dynamic Color Palette Generator</h3>
+                    <p>A React.js app that generates random color palettes. Features a modern glassmorphism UI and a "copy to clipboard" function for HEX codes.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/pratik5545/color-palette-generator" target="_blank" class="btn-project">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://pratik5545.github.io/color-palette-generator/" target="_blank" class="btn-project">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section id="contact" class="section-card">
+            <h2>Get In Touch</h2>
+            <p class="contact-intro">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+           <form class="contact-form" action="https://formspree.io/f/xkgplbkp" method="POST">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea rows="5" name="Message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> pratiktripathi4495@gmail.com</p>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pratik Tripathi. All rights reserved.</p>
+        <div class="social-icons footer-social">
+          
+            <a href="https://github.com/Pratik5545" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:pratiktripathi4495@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://x.com/I__am__paradox" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        
+    </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
